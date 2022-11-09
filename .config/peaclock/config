@@ -1,0 +1,10 @@
+# peaclock config
+# file: /root/.config/peaclock/config
+# date: 2019-12-26T11:41:45Z
+
+set date on
+set seconds on
+style active-fg #f00
+style active-bg #f00
+style date #f00
+style text #f00
