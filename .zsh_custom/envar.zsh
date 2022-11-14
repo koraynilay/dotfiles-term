@@ -621,8 +621,8 @@ pull_relb() {
 	relb_cd m
 	git pull
 	relb_cd g
-	git pull origin master
-	git pull origin koraynilay
+	git pull upstream master #upstream
+	git pull origin master #my fork
 	relb_cd ue4
 	git pull
 }
