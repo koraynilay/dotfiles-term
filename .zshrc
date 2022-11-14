@@ -140,7 +140,7 @@ unsetopt BEEP #all
 #unsetopt HIST_BEEP #others
 #neofetch | lolcat
 if [ -z "$SSH_CONNECTION" ];then
-	if ! [[ $(tty) = /dev/tty* ]];then
+	if ! [[ $(tty) = /dev/tty* && -f $ZSH_TODO ]];then
 		cat $ZSH_TODO
 	fi
 fi
