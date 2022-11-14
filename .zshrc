@@ -97,6 +97,8 @@ setopt SHARE_HISTORY
 
 export TUIR_BROWSER='feh'
 export ZSH_TODO="$HOME/.zsh_todo"
+export ZSH_GITS="$HOME/.zsh_gits"
+export ZSH_SCHOOL="$HOME/.zsh_school"
 export DXVK_HUD=api,frametimes,fps,gpuload
 export PATH="$PATH:$HOME/.local/bin:$HOME/linux-custom-scripts:/Q/relb/SourceUE4_koraynilay/Engine/Binaries/Linux"
 # relb
@@ -142,6 +144,12 @@ if [ -z "$SSH_CONNECTION" ];then
 		cat $ZSH_TODO
 	fi
 fi
+if [ -f $ZSH_GITS ];then
+	source ~/.zsh_gits
+fi
+if [ -f $ZSH_SCHOOL ];then
+	source ~/.zsh_school
+fi
 if [ -f /etc/bash.command-not-found ]; then
     . /etc/bash.command-not-found
 fi
@@ -184,8 +192,6 @@ bindkey "^F" autosuggest-accept
 KEYTIMEOUT=1
 
 #eval $(thefuck --alias)
-source ~/.zsh_gits
-source ~/.zsh_school
 # include Mycroft commands
 #source ~/.profile_mycroft
 #source /etc/profile.d/mycroft.zsh
