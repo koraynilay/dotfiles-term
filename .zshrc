@@ -102,7 +102,7 @@ export ZSH_SCHOOL="$HOME/.zsh_school"
 export DXVK_HUD=api,frametimes,fps,gpuload
 export PATH="$PATH:$HOME/.local/bin:$HOME/linux-custom-scripts:/Q/relb/SourceUE4_koraynilay/Engine/Binaries/Linux"
 # relb
-export PATH="$PATH:/Q/relb/SourceUE4_koraynilay/Engine/Binaries/Linux"
+export PATH="$PATH:/Q/relb/SourceUE4/Engine/Binaries/Linux"
 #export PATH="$PATH:/home/koraynilay/.local/bin:/usr/bin"
 
 
