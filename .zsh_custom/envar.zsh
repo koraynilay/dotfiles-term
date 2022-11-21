@@ -53,27 +53,27 @@ autostart_script=~/.config/autostart.sh
 
 # dotfiles-minimal
 #alias m='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git --work-tree=$HOME -c status.showUntrackedFiles=no'
-alias m='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git'
-alias mst='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git status'
-alias mrm='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git rm --cached'
-alias ma='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git add --verbose'
-alias mc='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git commit'
-alias mp='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git push'
-alias mdi='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git diff'
-alias ml='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git pull'
-alias mlg='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --stat'
-alias mlgg='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --graph'
-alias mlgga='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --graph --decorate --all'
-alias mlgm='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --graph --max-count=10'
-alias mlgp='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --stat -p'
-alias mlo='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --oneline --decorate'
-alias mlod='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'\'
-alias mlods='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'\'' --date=short'
-alias mlog='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --oneline --decorate --graph'
-alias mloga='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --oneline --decorate --graph --all'
-alias mlol='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'
-alias mlola='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --all'
-alias mlols='git --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --stat'
+alias m='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git'
+alias mst='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git status'
+alias mrm='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git rm --cached'
+alias ma='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git add --verbose'
+alias mc='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git commit'
+alias mp='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git push'
+alias mdi='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git diff'
+alias ml='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git pull'
+alias mlg='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --stat'
+alias mlgg='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --graph'
+alias mlgga='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --graph --decorate --all'
+alias mlgm='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --graph --max-count=10'
+alias mlgp='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --stat -p'
+alias mlo='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --oneline --decorate'
+alias mlod='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'\'
+alias mlods='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'\'' --date=short'
+alias mlog='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --oneline --decorate --graph'
+alias mloga='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --oneline --decorate --graph --all'
+alias mlol='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'
+alias mlola='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --all'
+alias mlols='git --work-tree=$HOME --git-dir=$HOME/.config/dotfiles-minimal/dotfiles-minimal.git log --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --stat'
 
 # default git aliases overrides
 alias gaa="$(alias gaa | cut -f2- -d= | tr -d "'") --verbose"
@@ -620,11 +620,15 @@ relb_cd() {
 pull_relb() {
 	relb_cd m
 	git pull
-	relb_cd g
-	git pull upstream master #upstream
-	git pull origin master #my fork
 	relb_cd ue4
 	git pull
+}
+pull_g() {
+	relb_cd g
+	git stash push
+	git lfs fetch upstream master --all
+	git pull upstream master #upstream
+	git pull origin master #my fork
 }
 relb() {
 	relb_base_path="/Q/relb"
@@ -633,6 +637,7 @@ relb() {
 		y|menu-server-start) menu_server_start;;
 		s|game-server-start) game_server_start;;
 		u|update|git-pull|pull) pull_relb;;
+		gu|) pull_g;;
 		v|vs|lb-launcher-settings|settings) vim $relb_base_path/.wine/drive_c/users/koraynilay/AppData/Roaming/AerialNinjaLauncher/settings.ini;;
 		r) /usr/bin/mono "$relb_base_path/SourceUE4_koraynilay/Engine/Binaries/DotNET/UnrealBuildTool.exe" ShooterGame Development Linux -project="$relb_base_path/relb-game-server/ShooterGame.uproject" -editorrecompile -progress -noubtmakefiles -NoHotReloadFromIDE;;
 		cd) relb_cd $2;;
