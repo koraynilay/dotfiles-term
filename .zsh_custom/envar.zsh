@@ -590,7 +590,7 @@ alias pp='PULSE_LATENCY_MSEC=45 rpcs3 &!'
 # relb
 linux_server_build() {
 	output_folder="/Q/relb/ll"
-	ue4_path="/Q/relb/SourceUE4_koraynilay"
+	ue4_path="/Q/relb/SourceUE4"
 	game_server_path="/Q/relb/relb-game-server"
 	PATH="$ue4_path/../clang35_prebuilt/bin:$PATH" $ue4_path/Engine/Build/BatchFiles/RunUAT.sh BuildCookRun -project=$game_server_path/ShooterGame.uproject -noP4 -clientconfig=Development -serverconfig=Development -nocompileeditor -ue4exe=UE4Editor -utf8output -server -serverplatform=Linux -noclient -build -cook -map=B_redfalls+Highrise_Collisions_Temp+Highrise_Vista+Highrise_Lights+Highrise_Audio+ShooterEntry+Highrise_Gameplay+Highrise_Meshing+Sanctuary+Highrise+clash+clash_gameplay+clash_gameplay_tdm+clash_gameplay_killconf+detour+dev_gym+gateway+grandview_gameplay+grandview+grandview_gameplay_elimination+grandview_gameplay_rush+mammoth+namsan+promenade+promenade_night+reactor+reactor_night+redfalls+redfalls_gameplay+redfalls_gameplay_blitz+redfalls_gameplay_turfwar+C_redfalls+L_redfalls+redfalls_bloodmoon+station_gameplay+station_gameplay_blitz+station+station_gameplay_turfwar+trench+tutorial+B_vertigo+C_vertigo+vertigo+L_vertigo -unversionedcookedcontent -compressed -stage -package -stagingdirectory=$output_folder -cmdline=" -Messaging" -addcmdline="-SessionId=4745CDB71B080E0A003702C3899401A6 -SessionOwner='koraynilay' -SessionName='ciao'" -compile
 }
@@ -639,7 +639,7 @@ relb() {
 		u|update|git-pull|pull) pull_relb;;
 		gu|) pull_g;;
 		v|vs|lb-launcher-settings|settings) vim $relb_base_path/.wine/drive_c/users/koraynilay/AppData/Roaming/AerialNinjaLauncher/settings.ini;;
-		r) /usr/bin/mono "$relb_base_path/SourceUE4_koraynilay/Engine/Binaries/DotNET/UnrealBuildTool.exe" ShooterGame Development Linux -project="$relb_base_path/relb-game-server/ShooterGame.uproject" -editorrecompile -progress -noubtmakefiles -NoHotReloadFromIDE;;
+		r) PATH="$relb_base_path/clang35_prebuilt/bin:$PATH" /usr/bin/mono "$relb_base_path/SourceUE4/Engine/Binaries/DotNET/UnrealBuildTool.exe" ShooterGame Development Linux -project="$relb_base_path/relb-game-server/ShooterGame.uproject" -editorrecompile -progress -noubtmakefiles -NoHotReloadFromIDE;;
 		cd) relb_cd $2;;
 		*) printf "usage:\nrelb [l|cd]\n";;
 	esac
