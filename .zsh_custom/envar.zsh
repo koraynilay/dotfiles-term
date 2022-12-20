@@ -626,9 +626,10 @@ pull_relb() {
 pull_g() {
 	relb_cd g
 	git stash push
-	git lfs fetch upstream master --all
+	git lfs fetch upstream --all
 	git pull upstream master #upstream
 	git pull origin master #my fork
+	echo "RUN: git stash pop"
 }
 relb() {
 	relb_base_path="/Q/relb"
