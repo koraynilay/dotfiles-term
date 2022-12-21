@@ -604,7 +604,7 @@ game_server_start() {
 	relb_base_path="/Q/relb"
 	relb_game_server="$relb_base_path/ll/LinuxServer"
 	cd $relb_game_server
-	./ShooterGameServer.sh -log -token=__secret__ -menuhost=http://localhost:3000
+	./ShooterGameServer.sh -log -token=__secret__ -menuhost=http://localhost:4000
 }
 relb_cd() {
 	relb_base_path="/Q/relb"
