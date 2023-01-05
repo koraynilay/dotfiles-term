@@ -638,7 +638,7 @@ relb() {
 		y|menu-server-start) menu_server_start;;
 		s|game-server-start) game_server_start;;
 		u|update|git-pull|pull) pull_relb;;
-		gu|) pull_g;;
+		gu) pull_g;;
 		v|vs|lb-launcher-settings|settings) vim $relb_base_path/.wine/drive_c/users/koraynilay/AppData/Roaming/AerialNinjaLauncher/settings.ini;;
 		r) PATH="$relb_base_path/clang35_prebuilt/bin:$PATH" /usr/bin/mono "$relb_base_path/SourceUE4/Engine/Binaries/DotNET/UnrealBuildTool.exe" ShooterGame Development Linux -project="$relb_base_path/relb-game-server/ShooterGame.uproject" -editorrecompile -progress -noubtmakefiles -NoHotReloadFromIDE;;
 		cd) relb_cd $2;;
