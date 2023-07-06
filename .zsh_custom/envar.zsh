@@ -604,7 +604,7 @@ game_server_start() {
 	relb_base_path="/Q/relb"
 	relb_game_server="$relb_base_path/ll/LinuxServer"
 	cd $relb_game_server
-	./ShooterGameServer.sh -log -token=__secret__ -menuhost=http://localhost:4000
+	./ShooterGameServer.sh -log -token=__secret__ -menuhost=http://localhost:4000 $@
 }
 relb_cd() {
 	relb_base_path="/Q/relb"
@@ -636,7 +636,7 @@ relb() {
 	case $1 in
 		l|linux-server-build) linux_server_build;;
 		y|menu-server-start) menu_server_start;;
-		s|game-server-start) game_server_start;;
+		s|game-server-start) game_server_start $@;;
 		u|update|git-pull|pull) pull_relb;;
 		gu) pull_g;;
 		v|vs|lb-launcher-settings|settings) vim $relb_base_path/.wine/drive_c/users/koraynilay/AppData/Roaming/AerialNinjaLauncher/settings.ini;;
